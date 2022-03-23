@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     border: 0;
-    
+    font-family: 'Red Hat Display', sans-serif;
 }
 body {
     margin: 15vh;
@@ -10,13 +12,14 @@ body {
     justify-content: center;
     align-items: center;
     background-color: lightblue;
-    /* font-family: 'roboto' sans-serif; */
+    
 }
 .container {
     width: 350px;
     height: 500px;
     background-color: #fff;
     border-radius: 8px;
+    padding: 25px 30px 30px 30px;
 }
 .iconActive { 
     width: 100%;
@@ -25,18 +28,22 @@ body {
 .iconActive img {
     padding: 0px;
     width: 100%; 
-    border-radius: 6px; 
+    border-radius: 10px; 
 }
 .title {
-    margin-bottom: 30px;
-    margin-top: 20px;
-    margin-right: 40px;
-    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    font-weight: 900;
 }
+
+
 .title span{
     color: black;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 900;
+    font-size: 20px; 
+   
 } 
 
 .podcasts {
@@ -46,27 +53,84 @@ body {
     margin-left: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
-    padding-left: 30px;
+    padding-left: 25px;
+    
   
 }  
 .podcasts span {
     color: rgb(153, 152, 152);
-     font-size: medium;
+     /* font-size: medium; */
+     font-weight: 500;
+     text-align: center;
 }
 
 .icon-music {
-    margin-top:20px ;
-    margin-bottom:20px;
-    margin-left:50px;
-    margin-right: 20px; 
+    width: 80%;
+    margin: 0 auto 20px auto;
+    padding: 10px 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    border-radius: 8px;
+}
+.icon-music strong {
+    font-weight: 900;
+}
+
+.planAtual{
+    display: flex;
+    align-items: center;
+    background-color:#fff;
+    flex: 2;
+    gap: 10px;
+}
+.planAtual .price{
+    color: rgb(158, 158, 158);
+    font-weight: 600;
 }
 
 
+.changeBtn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color:#fff;
+    font-weight: 900;
+    font-size: 13px;
+    flex: 1;
+    cursor: pointer;
+}
+.proceed{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.proceed button{
+    width: 100%;
+    margin: auto;
+    padding: 15px 15px ;
+    color: #fff;
+    background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
 
+}
 
+.cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: 600;
+    color: rgb(83, 83, 83);
+    cursor: pointer;
+    padding: 10px;
 
-
+}
 
 
 
